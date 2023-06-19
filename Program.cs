@@ -25,7 +25,7 @@ namespace IntroducingTasks
             // thread does not give up its turn
             // avoiding a context switch
             Thread.SpinWait(10000);
-            SpinWait.SpinUntil(() => false);
+            SpinWait.SpinUntil(() => true);
             Console.WriteLine("Are you still here?");
 
             Console.ReadKey();
